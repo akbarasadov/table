@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    padding: 12px 15px;
+    text-align: center;
+    color: rgb(188, 184, 183);
+    font-size: 14px;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+thead th {
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
