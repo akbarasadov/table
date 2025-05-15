@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Таблица студентов</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+
+      <form name="add" class="form">
+        <input type="text" placeholder="Имя" class="name" required>
+        <input type="number" placeholder="Возраст" class="date_birth" required>
+        <button type="submit">Показать</button>
+      </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Имя студента</th>
+          <th>Год рождения</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <dialog>
+    <form class="form">
+        <input class="newTitle" type="text" placeholder="Введите новое имя.">
+        <div class="checkbox">
+            <input class="input_checkbox" type="checkbox">Вы действительно хотите это изменить?
+        </div>
+
+        <div class="btns">
+            <button class="close">Закрыть</button>
+            <button class="save">Сохранить</button>
+        </div>
+    </form>
+</dialog>
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

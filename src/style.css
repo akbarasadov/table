@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.delete img,
+.edit img {
+  width: 20px;
+  height: 20px;
+}
+
+.delete,
+.edit {
+  background: none;
+  border: none;
+}
+
+thead {
+  border-bottom: black 1px solid;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 221px;
+  height: 45px;
+  padding: 0 12px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 1px solid #949494;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+form button {
+  width: 120px;
+  height: 45px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #00a2ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+form{
+  padding-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  border-bottom: 1px solid #bdbcbc;
+  padding: 10px;
+  color: #bdbcbc;
+  font-size: 15px;
+}
+
+tbody td {
+  border-bottom: 1px solid #bdbcbc;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+tr{
+  text-align: center;
+}
+
+h1{
+  padding: 10px 0 30px;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+dialog {
+  all: unset;
+  display: none;
+  border: none;
+  width: 420px;
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  margin-bottom: 100px;
+  margin: auto;
+
+
+  .form {
+      all: unset;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .form input[type="text"] {
+      margin-bottom: 20px;
+      padding: 10px;
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .form input[type="checkbox"] {
+      cursor: pointer;
+      text-align: left;
+      width: 20px;
+      height: 20px;
+  }
+
+  .btns {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+  .btns button {
+      width: 150px; 
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  .btns .save {
+      background-color: #4CAF50;
+      color: white;
+  }
+
+  .btns .save:hover {
+      background-color: #45a049;
+  }
+
+  .checkbox {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+}
+
+dialog[open] {
+  display: block;
+}
+
+dialog[close] {
+  display: block;
+}
